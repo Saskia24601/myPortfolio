@@ -12,10 +12,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*p{
-
+p{
+    color: darkslategrey;
 }
-*/
 
 a { 
     text-decoration: none; 
@@ -63,10 +62,26 @@ a:visited {
     text-decoration-color: rgba(128, 128, 128, 0.784);
     text-underline-offset: 0.8rem;
 }
-/*
-#banner-container{
-    max-width: 100%;
-    height: auto;
-    opacity: 0.7;
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    color: blue;
 }
-*/
+
+section {
+    margin: 0 5rem;
+    padding-top: 3vh;
+    height: 97vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+}
