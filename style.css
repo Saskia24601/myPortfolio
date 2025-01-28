@@ -117,5 +117,12 @@ div.skills-container{
 }
 
 .contact-container {
-    text-align: center;
+    width: 100%;
+   text-align: center;
+}
+.contact-info{
+    padding-bottom: 1rem;
+}
+.contact-container img{
+    height: 7vh;
 }
