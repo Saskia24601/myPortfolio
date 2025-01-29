@@ -8,7 +8,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+.portfolio-body {
+
     font-family: Arial, Helvetica, sans-serif;
     background-color: #E6E6E6;
 }
@@ -68,7 +69,7 @@ a:visited {
     text-align: center;
 }
 
-section {
+#hero {
     margin: 0 5rem;
     padding-top: 2vh;
     box-sizing: border-box;
@@ -126,3 +127,44 @@ div.skills-container{
 .contact-container img{
     height: 7vh;
 }
+
+
+/* Contact Page */
+
+.contact-me {
+    background-color: #E6E6E6;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    padding: 3rem;
+
+}
+
+form {
+    background-color: white;
+}
+.contact-box {
+    text-align: center;
+    padding-top: 2vh;
+    border-radius: 5px;   
+}
+
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.box {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }

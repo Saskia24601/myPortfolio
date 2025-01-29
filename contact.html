@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="topnav">
+        <div class="logo">Contact</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href=aboutMe.html>Home</a></li>
+                </ul>
+            </div>
+   </nav>
+
+   <section id="contact">
+    <div class="contact-me">
+        <h2>Any questions?</h3>
+        <p>Fill out your information and I will reach out to you!</p>
+    </div>
+    </section>
+    <form class="contact-box">
+        <label for="first-name">First Name *</label>
+        <input type="text" id="first-name" name="first-name" class="box" required minlength="2" maxlength="15" size="20"/>
+         <br>
+         <br>
+        <label for="last-name">Last Name *</label>
+        <input type="text" id="last-name" name="last-name" required class="box" minlength="2" maxlength="15" size="20" /> 
+        <br>
+        <br>
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required class="box" minlength="2" maxlength="18" size="20" />
+        <br>
+        <br>
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required size="20" class="box"/>
+        <br>
+        <br>
+        <label for="questions">Any questions or queries:</label></p>
+        <textarea id="questions" name="questions" class="box" rows="4" cols="50" placeholder="Any questions or queries?"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        
+        </form>
+    </form>
+</section>
+</body>
