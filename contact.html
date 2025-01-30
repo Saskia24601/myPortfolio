@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script> 
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         <p>Fill out your information and I will reach out to you!</p>
     </div>
     </section>
-    <form class="contact-box">
+    <form class="contact-box" method="post" onsubmit="return greeting()">
         <label for="first-name">First Name *</label>
         <input type="text" id="first-name" name="first-name" class="box" required minlength="2" maxlength="15" size="20"/>
          <br>
@@ -44,8 +45,8 @@
         <textarea id="questions" name="questions" class="box" rows="4" cols="50" placeholder="Any questions or queries?"></textarea>
         <br>
         <br>
-        <input type="submit" value="Submit">
-        
+        <input type="submit" value="Submit" id="form">
+
         </form>
     </form>
 </section>

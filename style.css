@@ -99,6 +99,7 @@ a:visited {
 
 .projects {
     margin-top: 100px;
+    margin-bottom: 60px;
 }
 
 .project-container {
@@ -168,3 +169,33 @@ input[type=submit] {
     margin-bottom: 16px;
     resize: vertical;
   }
+
+
+  /*   For mobile phones */
+
+  @media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        gap: 2 rem;
+        font-size: 16px;
+        padding: 30px;
+        color: #00111a;
+        list-style-type: none;
+    }
+    .introduction img{
+        max-height: 200px;
+        border-radius: 4rem;
+        margin: 1.5rem 4rem;
+    }
+    .projects {
+        margin: 30px;
+    }
+    .project-container {
+        text-align: center;
+        list-style-position: inside;
+    }
+}
+  
