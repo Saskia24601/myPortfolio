@@ -4,37 +4,113 @@ body {
   color: #ccd6f6;
 }
 
+/* Sidebar container style for both sidebars */
 #navbar {
-  width: 180px;
+  width: 250px;
   height: 100vh;
+  padding-top: 2rem;
+  background-color: #112240;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 2rem;
-  background-color: #112240;
+  color: #ccd6f6;
 }
 
+/* Nav links */
 #navbar .nav-link {
   color: #8892b0;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-#navbar .nav-link.active,
-#navbar .nav-link:hover {
+#navbar .nav-link.active, #sidebarLarge .nav-link.active,
+#navbar .nav-link:hover, #sidebarLarge .nav-link:hover {
   color: #64ffda;
   background-color: #112240;
   border-left: 3px solid #64ffda;
 }
 
+/* Adjust margin for main content */
 main {
-  margin-left: 180px;
+  padding: 2rem;
+  margin-left: 0; 
+}
+img.rounded-circle {
+  border: 3px solid #64ffda;
+}
+
+
+.offcanvas-backdrop {
+  background-color: transparent !important;
+}
+
+
+.offcanvas {
+  background-color: #121212; 
+  width: 250px !important;
+}
+
+
+.offcanvas-body {
+  padding: 0 !important;
+}
+#hero {
+  width: 100vw;
+  height: 100vh;
+  background: url(/images/sarah.jpeg) top center no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  z-index: 0;
+}
+
+#hero::before {
+  content: "";
+  background: rgba(5, 13, 24, 0.4); /* overlay */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   padding: 2rem;
 }
 
-img.rounded-circle {
-  border: 3px solid #64ffda;
+.hero-content h2,
+.hero-content p,
+.hero-content h3 {
+  margin: 0;
+}
+
+
+#rotating-words {
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  body {
+    background-position: center 20%;
+  }
+  #hero {
+    align-items: flex-start; 
+    padding-top: 4rem; 
+  }
+   main {
+    margin-left: 250px; /* only on large screens */
+  }
 }
