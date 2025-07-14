@@ -20,144 +20,113 @@
     rel="stylesheet"
   />
 
-  <style>
-    /* Sidebar width for large screens */
-    #sidebarLarge {
-      width: 250px;
-      height: 100vh;
-      padding-top: 2rem;
-    }
-
-    /* Main content margin for large screens */
-    main {
-      margin-left: 0;
-      padding-top: 3rem;
-    }
-
-    @media (min-width: 992px) {
-      main {
-        margin-left: 250px;
-      }
-    }
-  </style>
 </head>
 
 
-<body>
-  <!-- Hamburger toggle button always visible -->
-  <button
-    class="btn btn-outline-light position-fixed top-0 start-0 m-3"
-    type="button"
-    data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasSidebar"
-    aria-controls="offcanvasSidebar"
-    style="z-index: 1050;"  
-  >
-    <i class="bi bi-list"></i>
-  </button>
+  <body>
 
-  <!-- Offcanvas sidebar -->
-  <div
-    class="offcanvas offcanvas-start bg-dark text-light"
-    tabindex="-1"
-    id="offcanvasSidebar"
-    aria-labelledby="offcanvasSidebarLabel"
-  >
-    <div class="offcanvas-header">
-      <h5 id="offcanvasSidebarLabel">Menu</h5>
-      <button
-        type="button"
-        class="btn-close btn-close-white"
-        data-bs-dismiss="offcanvas"
-        aria-label="Close"
-      ></button>
-    </div>
-    <div class="offcanvas-body p-0">
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark flex-column">
-        <div class="text-center mb-4">
-          <h1 class="h4 mt-2">Sarah Robinson</h1>
-        </div>
-        <ul class="navbar-nav flex-column">
-          <li class="nav-item">
-            <a href="#hero" class="nav-link active"><i class="bi bi-house"></i> Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link"><i class="bi bi-person"></i> About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link"><i class="bi bi-briefcase"></i> Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link"><i class="bi bi-tools"></i> Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+<header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+  <nav id="navbar" class="navbar">
+    <ul>
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <!-- <i class="bi mobile-nav-toggle bi-list" role="button" aria-label="Toggle navigation"></i> -->
+  </nav>
+</header>
 
-  
+
 
   <!-- Main content -->
   <main>
     <!-- Hero Section -->
     <section id="hero">
       <div class="hero-content">
-        <h2>Hello! I'm Sarah Robinson</h2>
-        <p class="lead">Web Developer & Designer</p>
+        <h1>Hello! I'm Sarah Robinson</h1>
+        <h2 class="lead">Web Developer & Designer</h2>
          <h3>I am <span id="rotating-words">a Developer</span></h3>
     </section>
 
     
-    <!-- Adjectives Section -->
-    <section id="aboutMe" class="my-5">
+    <!-- About Section -->
+    <section id="about" class="my-5">
       <div class="container">
         <div class= "section-title">
-          <h2>Welcome to my portfolio!</h2>
+          <h2>About Me</h2>
+        </div>
+        <div class="row">
+          <div class="about-content-container">
           <p> I recently graduated from an intensive coding traineeship where I developed a my foundations in web development. 
             My journey into the world of coding began September 2024. My friends and I were talking about schools and the lessons were being to include coding. 
             This brought back memeries of creating websites for GCSE IT and how I absolutely loved it. So I wanted to try and test myself and jump into the unknown world of coding. 
-            <br>
+            <br/>
             Throughout my journey, I have learnt a lot and I am continuously improving my skills and solve the puzzles in which coding brings!
             I am excited to share some of my projects and skills with you here. 
             Feel free to explore and connect me if you'd like to work together! </p>
+        </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="my-5">
-      <h3>Skills</h3>
+      <div class="container">
+        <div class= "section-title">
+          <h3>Skills</h3>
+      </div>
+      <div class="row">
+          <div class="skills-content-container">
      <p>
       During my traineeship, I have gained experience in full stack web development including: 
      </p>
-     <ul class="skills-gallery">
-      <li src="images/HTML5_logo_and_wordmark.svg.png" alt="HTML5 Icon">HTML5</li>
-      <li src="images/CSS-Logo.png" alt="CSS Icon">CSS3</li>
-      <li src="" alt="BootStrap Icon">JavaScript</li>
-      <li src="images/Javascript.png" alt="JavaScript Icon">JavaScript</li>
-      <li src="images/" alt="jQuery Icon">JavaScript</li>
-      <li src="React Icon" alt="React Icon">JavaScript</li>
-      <li src="PHP Icon" alt="PHP Icon">JavaScript</li>
-      <li src="Python Icon" alt="Python Icon">JavaScript</li>
-      <li src="MySQL Icon" alt="MySQL Icon">JavaScript</li>
-      <li src="GitHub Icon" alt="GitHub Icon">JavaScript</li>
-      <li src="Command Line Icon" alt="Command Line Icon">JavaScript</li>
+     <ul class="skills-gallery list-unstyled d-flex flex-wrap gap-3">
+      <li><img src="images/HTML5.png" alt="HTML5 Icon" width="48" height="48"/>HTML5</li>
+      <li><img src="images/CSS-Logo.png" alt="CSS Icon" width="48" height="48"/>CSS3</li>
+      <li><img src="" alt="BootStrap Icon" width="48" height="48"/>Bootstrap</li>
+      <li><img src="images/Javascript.png" alt="JavaScript Icon" width="48" height="48"/>JavaScript</li>
+      <li><img src="" alt="jQuery Icon" width="48" height="48"/>jQuery</li>
+      <li><img src="React Icon" alt="React Icon" width="48" height="48"/>React</li>
+      <li><img src="PHP Icon" alt="PHP Icon" width="48" height="48"/>PHP</li>
+      <li><img src="Python Icon" alt="Python Icon" width="48" height="48"/> Python</li>
+      <li ><img src="MySQL Icon" alt="MySQL Icon" width="48" height="48"/>MySQL</li>
+      <li> <img src="GitHub Icon" alt="GitHub Icon" width="48" height="48"/>GitHub</li>
+      <li> <img src="Command Line Icon" alt="Command Line Icon">Command Line</li>
      </ul>
+     </div>
+     </div>
     </section>
+
 
  <!-- Projects Section -->
     <section id="projects" class="my-5">
+      <div class="container">
+        <div class= "section-title">
       <h3>Projects</h3>
+      </div>
+      <div class="row">
+          <div class="projects-content-container">
       <p>Have a look at my recent projects</p>
+      <ul class="project list-unstyled d-flex flex-wrap gap-3">
+
+      </ul>
+      </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="my-5">
+      <div class="container">
+        <div class= "section-title">
       <h3>Contact Me</h3>
+      </div>
+      <div class="row">
+          <div class="contact-content-container">
       <!-- Add contact info -->
+       </div>
+       </div>
     </section>
   </main>
 
