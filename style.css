@@ -111,6 +111,6 @@ img.rounded-circle {
     padding-top: 4rem; 
   }
    main {
-    margin-left: 250px; /* only on large screens */
+    margin-left: 250px; 
   }
 }
